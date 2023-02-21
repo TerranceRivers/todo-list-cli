@@ -74,26 +74,6 @@ function completedTask() {
     }
   }
 }
-function completedArr() {
-  console.log("============COMPLETED===================");
-  if (completed.length === 0) {
-    console.log("No compeleted Items");
-  } else
-    for (i = 0; i < completed.length; i++) {
-      console.log(i + 1 + ": " + completed[i]);
-      console.log(" ");
-    }
-}
-function incompletedArr() {
-  console.log("============INCOMPLETED===================");
-  if (incompleted.length === 0) {
-    console.log("your list is empty");
-  } else
-    for (i = 0; i < incompleted.length; i++) {
-      console.log(i + 1 + ": " + incompleted[i]);
-      console.log(" ");
-    }
-}
 function edit() {
   if (incompleted.length === 0) {
     console.log("You have no items to edit.");
@@ -124,6 +104,26 @@ function edit() {
       }
     }
   }
+}
+function completedArr() {
+  console.log("============COMPLETED===================");
+  if (completed.length === 0) {
+    console.log("No compeleted Items");
+  } else
+    for (i = 0; i < completed.length; i++) {
+      console.log(i + 1 + ": " + completed[i]);
+      console.log(" ");
+    }
+}
+function incompletedArr() {
+  console.log("============INCOMPLETED===================");
+  if (incompleted.length === 0) {
+    console.log("your list is empty");
+  } else
+    for (i = 0; i < incompleted.length; i++) {
+      console.log(i + 1 + ": " + incompleted[i]);
+      console.log(" ");
+    }
 }
 function farwell(){
   console.log(" You have exited the application Good Bye!!")
